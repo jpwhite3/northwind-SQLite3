@@ -10,7 +10,7 @@
 
 -- Modified by Len Boyette @ 2013-02-08
 -- Added foreign keys
-
+PRAGMA foreign_keys=off;
 
 -- Categories
 DROP TABLE IF EXISTS [Categories];
@@ -5983,6 +5983,9 @@ VALUES('98052', 'Redmond                                           ', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
 VALUES('98104', 'Seattle                                           ', 2);
 SELECT * FROM [Territories];
+
+PRAGMA foreign_keys=on;
+
 --
 -- Valon Hoti @ 2010-07-04 [YYYY-MM-DD]
 -- Prishtine,10000
