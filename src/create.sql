@@ -5614,7 +5614,7 @@ CREATE TABLE [Products](
     CHECK ([ReorderLevel]>=(0)),
     CHECK ([UnitsInStock]>=(0)),
     CHECK ([UnitsOnOrder]>=(0)),
-	FOREIGN KEY ([ProductID]) REFERENCES [Categories] ([CategoryID]) 
+	FOREIGN KEY ([CategoryID]) REFERENCES [Categories] ([CategoryID]) 
 		ON DELETE NO ACTION ON UPDATE NO ACTION,
 	FOREIGN KEY ([SupplierID]) REFERENCES [Suppliers] ([SupplierID]) 
 		ON DELETE NO ACTION ON UPDATE NO ACTION
