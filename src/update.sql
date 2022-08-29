@@ -83,6 +83,6 @@ p.*,
 c.CategoryName, c.Description as [CategoryDescription],
 s.CompanyName as [SupplierName], s.Region as [SupplierRegion]
 from [Products] p
-join [Categories] c on p.CategoryId = c.id
-join [Suppliers] s on s.id = p.SupplierId;
+join [Categories] c on p.CategoryId = c.CategoryId
+join [Suppliers] s on s.SupplierId = p.SupplierId;
 
