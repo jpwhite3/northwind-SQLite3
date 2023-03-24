@@ -5786,7 +5786,7 @@ CREATE TABLE [Regions](
 INSERT INTO Regions (RegionID, RegionDescription)
 VALUES(1, 'Eastern');
 INSERT INTO Regions (RegionID, RegionDescription)
-VALUES(2, 'Westerns');
+VALUES(2, 'Western');
 INSERT INTO Regions (RegionID, RegionDescription)
 VALUES(3, 'Northern');
 INSERT INTO Regions (RegionID, RegionDescription)
