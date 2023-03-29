@@ -5784,13 +5784,13 @@ CREATE TABLE [Regions](
    [RegionDescription]TEXT NOT NULL
 );
 INSERT INTO Regions (RegionID, RegionDescription)
-VALUES(1, 'Eastern                                           ');
+VALUES(1, 'Eastern');
 INSERT INTO Regions (RegionID, RegionDescription)
-VALUES(2, 'Westerns                                           ');
+VALUES(2, 'Western');
 INSERT INTO Regions (RegionID, RegionDescription)
-VALUES(3, 'Northern                                          ');
+VALUES(3, 'Northern');
 INSERT INTO Regions (RegionID, RegionDescription)
-VALUES(4, 'Southern                                          ');
+VALUES(4, 'Southern');
 SELECT * FROM [Regions];
 --Shippers
 DROP TABLE IF EXISTS[Shippers];
@@ -5872,111 +5872,111 @@ CREATE TABLE [Territories](
 		ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('01581', 'Westboro                                          ', 1);
+VALUES('01581', 'Westboro', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('01730', 'Bedford                                           ', 1);
+VALUES('01730', 'Bedford', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('01833', 'Georgetow                                         ', 1);
+VALUES('01833', 'Georgetow', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('02116', 'Boston                                            ', 1);
+VALUES('02116', 'Boston', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('02139', 'Cambridge                                         ', 1);
+VALUES('02139', 'Cambridge', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('02184', 'Braintree                                         ', 1);
+VALUES('02184', 'Braintree', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('02903', 'Providence                                        ', 1);
+VALUES('02903', 'Providence', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('03049', 'Hollis                                            ', 3);
+VALUES('03049', 'Hollis', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('03801', 'Portsmouth                                        ', 3);
+VALUES('03801', 'Portsmouth', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('06897', 'Wilton                                            ', 1);
+VALUES('06897', 'Wilton', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('07960', 'Morristown                                        ', 1);
+VALUES('07960', 'Morristown', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('08837', 'Edison                                            ', 1);
+VALUES('08837', 'Edison', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('10019', 'New York                                          ', 1);
+VALUES('10019', 'New York', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('10038', 'New York                                          ', 1);
+VALUES('10038', 'New York', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('11747', 'Mellvile                                          ', 1);
+VALUES('11747', 'Mellvile', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('14450', 'Fairport                                          ', 1);
+VALUES('14450', 'Fairport', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('19428', 'Philadelphia                                      ', 3);
+VALUES('19428', 'Philadelphia', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('19713', 'Neward                                            ', 1);
+VALUES('19713', 'Neward', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('20852', 'Rockville                                         ', 1);
+VALUES('20852', 'Rockville', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('27403', 'Greensboro                                        ', 1);
+VALUES('27403', 'Greensboro', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('27511', 'Cary                                              ', 1);
+VALUES('27511', 'Cary', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('29202', 'Columbia                                          ', 4);
+VALUES('29202', 'Columbia', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('30346', 'Atlanta                                           ', 4);
+VALUES('30346', 'Atlanta', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('31406', 'Savannah                                          ', 4);
+VALUES('31406', 'Savannah', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('32859', 'Orlando                                           ', 4);
+VALUES('32859', 'Orlando', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('33607', 'Tampa                                             ', 4);
+VALUES('33607', 'Tampa', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('40222', 'Louisville                                        ', 1);
+VALUES('40222', 'Louisville', 1);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('44122', 'Beachwood                                         ', 3);
+VALUES('44122', 'Beachwood', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('45839', 'Findlay                                           ', 3);
+VALUES('45839', 'Findlay', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('48075', 'Southfield                                        ', 3);
+VALUES('48075', 'Southfield', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('48084', 'Troy                                              ', 3);
+VALUES('48084', 'Troy', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('48304', 'Bloomfield Hills                                  ', 3);
+VALUES('48304', 'Bloomfield Hills', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('53404', 'Racine                                            ', 3);
+VALUES('53404', 'Racine', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('55113', 'Roseville                                         ', 3);
+VALUES('55113', 'Roseville', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('55439', 'Minneapolis                                       ', 3);
+VALUES('55439', 'Minneapolis', 3);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('60179', 'Hoffman Estates                                   ', 2);
+VALUES('60179', 'Hoffman Estates', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('60601', 'Chicago                                           ', 2);
+VALUES('60601', 'Chicago', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('72716', 'Bentonville                                       ', 4);
+VALUES('72716', 'Bentonville', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('75234', 'Dallas                                            ', 4);
+VALUES('75234', 'Dallas', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('78759', 'Austin                                            ', 4);
+VALUES('78759', 'Austin', 4);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('80202', 'Denver                                            ', 2);
+VALUES('80202', 'Denver', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('80909', 'Colorado Springs                                  ', 2);
+VALUES('80909', 'Colorado Springs', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('85014', 'Phoenix                                           ', 2);
+VALUES('85014', 'Phoenix', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('85251', 'Scottsdale                                        ', 2);
+VALUES('85251', 'Scottsdale', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('90405', 'Santa Monica                                      ', 2);
+VALUES('90405', 'Santa Monica', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('94025', 'Menlo Park                                        ', 2);
+VALUES('94025', 'Menlo Park', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('94105', 'San Francisco                                     ', 2);
+VALUES('94105', 'San Francisco', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('95008', 'Campbell                                          ', 2);
+VALUES('95008', 'Campbell', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('95054', 'Santa Clara                                       ', 2);
+VALUES('95054', 'Santa Clara', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('95060', 'Santa Cruz                                        ', 2);
+VALUES('95060', 'Santa Cruz', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('98004', 'Bellevue                                          ', 2);
+VALUES('98004', 'Bellevue', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('98052', 'Redmond                                           ', 2);
+VALUES('98052', 'Redmond', 2);
 INSERT INTO Territories (TerritoryID, TerritoryDescription, RegionID)
-VALUES('98104', 'Seattle                                           ', 2);
+VALUES('98104', 'Seattle', 2);
 SELECT * FROM [Territories];
 
 PRAGMA foreign_keys=on;
