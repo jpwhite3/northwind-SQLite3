@@ -17,16 +17,16 @@ erDiagram
     CustomerCustomerDemo }o--o{ CustomerDemographics : has
     CustomerCustomerDemo }o--|| Customers : through
     Employees ||--|| Employees : "reports to"
-    Employees ||--o{ EmployeeTerritories : has
+    Employees ||--o{ EmployeeTerritories : through
     Orders }o--|| Shippers : "ships via"
-    OrderDetails }o--|| Orders : has
-    OrderDetails }o--|| Products : has
+    OrderDetails }o--|| Orders : have
+    OrderDetails }o--|| Products : contain
     Products }o--|| Categories : in
     Products }o--|| Suppliers : "supplied by"
     Territories }o--|| Regions : in
-    EmployeeTerritories }o--|| Territories : has
-    Orders }o--|| Customers : has
-    Orders }o--|| Employees : has
+    EmployeeTerritories }o--|| Territories : have
+    Orders }o--|| Customers : place
+    Orders }o--|| Employees : "sold by"
 
 
     Categories {
