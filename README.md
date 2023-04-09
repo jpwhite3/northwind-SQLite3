@@ -12,6 +12,68 @@ All the TABLES and VIEWS from the MSSQL-2000 version have been converted to Sqli
 
 ![alt tag](https://raw.githubusercontent.com/jpwhite3/northwind-SQLite3/master/images/Northwind_ERD.png)
 
+```mermaid
+erDiagram
+    Categories }|..|{ DELIVERY-ADDRESS
+    CustomerCustomerDemo }o--o{ CustomerDemographics
+    CustomerCustomerDemo }o--|| Customers
+    Employees ||--|| Employees
+
+    Categories {
+        int CategoryID PK
+        string CategoryName
+        string Description
+        blob Picture
+    }
+    CustomerCustomerDemo {
+        string CustomerID PK, FK
+        string CustomerTypeID PK, FK
+    }
+    CustomerDemographics {
+        string CustomerTypeID PK
+        string CustomerDesc
+    }
+    Customers {
+        string CustomerID PK
+        string CompanyName
+        string ContactName
+        string ContactTitle
+        string Address
+        string City
+        string Region
+        string PostalCode
+        string Country
+        string Phone
+        string Fax
+    }
+    Employees {
+        int EmployeeID PK
+        string LastName
+        string FirstName
+        string Title
+        string TitleOfCourtesy
+        date BirthDate
+        date HireDate
+        string Address
+        string City
+        string Region
+        string PostalCode
+        string Country
+        string HomePhone
+        string Extension
+        blob Photo
+        string Notes
+        int ReportsTo FK
+        string PhotoPath
+    }
+    EmployeeTerritories {
+        int EmployeeID PK, FK
+        int TerritoryID PK, FK
+    }
+
+
+```
+
 # Build Instructions
 
 ## Prerequisites
