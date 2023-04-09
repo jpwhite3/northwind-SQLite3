@@ -14,10 +14,9 @@ All the TABLES and VIEWS from the MSSQL-2000 version have been converted to Sqli
 
 ```mermaid
 erDiagram
-    Categories }|..|{ DELIVERY-ADDRESS
-    CustomerCustomerDemo }o--o{ CustomerDemographics
-    CustomerCustomerDemo }o--|| Customers
-    Employees ||--|| Employees
+    CustomerCustomerDemo }o--o{ CustomerDemographics : through
+    CustomerCustomerDemo }o--|| Customers : has
+    Employees ||--|| Employees : has
 
     Categories {
         int CategoryID PK
