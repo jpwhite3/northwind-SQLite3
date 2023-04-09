@@ -16,7 +16,15 @@ All the TABLES and VIEWS from the MSSQL-2000 version have been converted to Sqli
 erDiagram
     CustomerCustomerDemo }o--o{ CustomerDemographics : through
     CustomerCustomerDemo }o--|| Customers : has
-    Employees ||--|| Employees : has
+    Employees ||--|| Employees : "reports to"
+    Employees ||--|| EmployeeTerritories : has
+    Orders }o--|| Shippers : "ships via"
+    OrderDetails ||--|| Orders : has
+    OrderDetails ||--|| Products : has
+    Products }o--|| Categories : in
+    Products }o--|| Suppliers : "supplied by"
+    Territories }o--|| Regions : in
+
 
     Categories {
         int CategoryID PK
@@ -69,7 +77,69 @@ erDiagram
         int EmployeeID PK, FK
         int TerritoryID PK, FK
     }
-
+    OrderDetails {
+        int OrderID PK, FK
+        int ProductID PK, FK
+        float UnitPrice
+        int Quantity
+        real Discount
+    }
+    Orders {
+        int OrderID PK
+        string CustomerID FK
+        int EmployeeID FK
+        datetime OrderDate
+        datetime RequiredDate
+        datetime ShippedDate
+        int ShipVia FK
+        numeric Freight
+        string ShipName
+        string ShipAddress
+        string ShipCity
+        string ShipRegion
+        string ShipPostalCode
+        string ShipCountry
+    }
+    Products {
+        int ProductID PK
+        string ProductName
+        int SupplierID FK
+        int CategoryID FK
+        int QuantityPerUnit
+        float UnitPrice
+        int UnitsInStock
+        int UnitsOnOrder
+        int ReorderLevel
+        string Discontinued
+    }
+    Regions {
+        int RegionID PK
+        string RegionDescription
+    }
+    Shippers {
+        int ShipperID PK
+        string CompanyName
+        string Phone
+    }
+    Suppliers {
+        int SupplierID PK
+        string CompanyName
+        string ContactName
+        string ContactTitle
+        string Address
+        string City
+        string Region
+        string PostalCode
+        string Country
+        string Phone
+        string Fax
+        string HomePage
+    }
+    Territories {
+        string TerritoryID PK
+        string TerritoryDescription
+        int RegionID FK
+    }
 
 ```
 
