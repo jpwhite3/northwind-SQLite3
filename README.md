@@ -14,16 +14,19 @@ All the TABLES and VIEWS from the MSSQL-2000 version have been converted to Sqli
 
 ```mermaid
 erDiagram
-    CustomerCustomerDemo }o--o{ CustomerDemographics : through
-    CustomerCustomerDemo }o--|| Customers : has
+    CustomerCustomerDemo }o--o{ CustomerDemographics : has
+    CustomerCustomerDemo }o--|| Customers : through
     Employees ||--|| Employees : "reports to"
-    Employees ||--|| EmployeeTerritories : has
+    Employees ||--o{ EmployeeTerritories : has
     Orders }o--|| Shippers : "ships via"
-    OrderDetails ||--|| Orders : has
-    OrderDetails ||--|| Products : has
+    OrderDetails }o--|| Orders : has
+    OrderDetails }o--|| Products : has
     Products }o--|| Categories : in
     Products }o--|| Suppliers : "supplied by"
     Territories }o--|| Regions : in
+    EmployeeTerritories }o--|| Territories : has
+    Orders }o--|| Customers : has
+    Orders }o--|| Employees : has
 
 
     Categories {
