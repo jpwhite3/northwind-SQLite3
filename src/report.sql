@@ -4,7 +4,7 @@ select "CustomerDemographics", count(*) from [CustomerDemographics];
 select "Customers", count(*) from [Customers];
 select "EmployeeTerritories", count(*) from [EmployeeTerritories];
 select "Employees", count(*) from [Employees];
-select "Details", count(*) from [Order Details];
+select "OrderDetails", count(*) from [Order Details];
 select "Orders", count(*) from [Orders];
 select "Products", count(*) from [Products];
 select "Regions", count(*) from [Regions];
