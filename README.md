@@ -10,8 +10,6 @@ All the TABLES and VIEWS from the MSSQL-2000 version have been converted to Sqli
 
 # Structure
 
-![alt tag](https://raw.githubusercontent.com/jpwhite3/northwind-SQLite3/master/images/Northwind_ERD.png)
-
 ```mermaid
 erDiagram
     CustomerCustomerDemo }o--|| CustomerDemographics : have
@@ -19,8 +17,8 @@ erDiagram
     Employees ||--|| Employees : "reports to"
     Employees ||--o{ EmployeeTerritories : through
     Orders }o--|| Shippers : "ships via"
-    OrderDetails }o--|| Orders : have
-    OrderDetails }o--|| Products : contain
+    "Order Details" }o--|| Orders : have
+    "Order Details" }o--|| Products : contain
     Products }o--|| Categories : in
     Products }o--|| Suppliers : "supplied by"
     Territories ||--|| Regions : in
@@ -80,7 +78,7 @@ erDiagram
         int EmployeeID PK, FK
         int TerritoryID PK, FK
     }
-    OrderDetails {
+    "Order Details" {
         int OrderID PK, FK
         int ProductID PK, FK
         float UnitPrice
