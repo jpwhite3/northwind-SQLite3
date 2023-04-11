@@ -149,7 +149,7 @@ erDiagram
 The following views have been converted from the original Northwind Access database. Please refer to the `src/create.sql` file to view the code behind each of these views.
 
 | View Name |
--------------
+|-----------|
 | [Alphabetical list of products] |
 | [Current Product List] |
 | [Customer and Suppliers by City] |
